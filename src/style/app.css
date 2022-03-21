@@ -2,14 +2,48 @@
   font-family: Arial;
 }
 
-.notepad {
+.myNotes {
   height: 100vh;
-  width: 100%;
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;
+  padding: 20px;
 }
 
 .main-title {
   font-size: 24px;
+}
+
+.noteTitle {
+  width: 50%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.note {
+  width: 50%;
+  height: 100px;
+  resize: none;
+  font-size: 15px;
+}
+
+.deleteBtn {
+  background-color: #ec3646;
+  color: white;
+  padding: 0;
+  border: 1px solid #ec3646;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+}
+
+.regularBtn {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
 }

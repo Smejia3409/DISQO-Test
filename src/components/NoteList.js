@@ -7,11 +7,19 @@ const NoteList = ({ arr, deleteFn }) => {
         return (
           <div className="each-note" key={note.id}>
             <div className="each-title">
-              <input type="text" value={note.title} />
-              <button onClick={() => deleteFn(note.id)}>Delete</button>
+              <input className="noteTitle" type="text" value={note.title} />
+              <button className="deleteBtn" onClick={() => deleteFn(note.id)}>
+                Delete
+              </button>
             </div>
             <br />
-            <input type="text" value={note.note} />
+            <textarea
+              className="note"
+              type="text"
+              value={note.note}
+              rows="10"
+              cols="50"
+            ></textarea>
             <br />
             <br />
           </div>
