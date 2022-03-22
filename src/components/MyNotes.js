@@ -3,6 +3,8 @@ import "../style/mynote.css";
 import NoteList from "./NoteList";
 import NotepadTitle from "./NotepadTitle";
 
+import { result } from "./gistsData";
+
 const MyNotes = () => {
   const [notepadTitle, setNotepadTitle] = useState("");
   const [title, setTitle] = useState("");
@@ -39,12 +41,26 @@ const MyNotes = () => {
     setNotepadTitle(e.target.value);
   };
 
+  const editNote = (index, newValue, area) => {
+    //saves the current list to new variable
+    let newList = [...list];
+    //change specific field in list
+
+    if (area === "title") {
+      newList[index].title = newValue;
+    } else {
+      newList[index].note = newValue;
+    }
+    setList(newList);
+  };
+
   const deleteNote = (id) => {
     const removeNote = list.filter((list) => list.id !== id);
     setList(removeNote);
   };
 
   const deleteNotePad = () => {
+    //clears note list and notepad title
     setList([]);
     setNotepadTitle("");
   };
@@ -55,6 +71,7 @@ const MyNotes = () => {
         title={notepadTitle}
         setTitleFunction={npTitle}
         deleteFn={deleteNotePad}
+        editNote={editNote}
       />
 
       <p className="main-title">My notes</p>

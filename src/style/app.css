@@ -8,6 +8,8 @@
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .main-title {
@@ -41,6 +43,17 @@
 .regularBtn {
   background-color: white;
   border: 1px solid gray;
+  padding: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+}
+
+.saveBtn {
+  background-color: #39acdc;
+  color: white;
+  border: none;
   padding: 0;
   border-radius: 5px;
   height: 40px;
