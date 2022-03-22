@@ -1,7 +1,17 @@
 * {
   font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
 
+.main-title {
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.container {
+  background-color: #eee;
+}
 .myNotes {
   height: 100vh;
   background-color: white;
@@ -19,13 +29,6 @@
 .noteTitle {
   width: 50%;
   height: 30px;
-  font-size: 15px;
-}
-
-.note {
-  width: 50%;
-  height: 100px;
-  resize: none;
   font-size: 15px;
 }
 
@@ -48,6 +51,7 @@
   height: 40px;
   width: 80px;
   text-align: center;
+  font-size: 14px;
 }
 
 .saveBtn {

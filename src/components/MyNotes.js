@@ -3,8 +3,6 @@ import "../style/mynote.css";
 import NoteList from "./NoteList";
 import NotepadTitle from "./NotepadTitle";
 
-import { result } from "./gistsData";
-
 const MyNotes = () => {
   const [notepadTitle, setNotepadTitle] = useState("");
   const [title, setTitle] = useState("");
@@ -74,7 +72,7 @@ const MyNotes = () => {
         editNote={editNote}
       />
 
-      <p className="main-title">My notes</p>
+      <p className="my-note-title">My Notes</p>
       <form onSubmit={preventDefault}>
         <input
           type="text"
@@ -82,6 +80,7 @@ const MyNotes = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Enter note title..."
+          maxLength="255"
         />
         <br />
         <br />
@@ -95,6 +94,7 @@ const MyNotes = () => {
           placeholder="Enter note..."
           rows="10"
           cols="50"
+          maxLength="1000"
         ></textarea>
 
         <br />

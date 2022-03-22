@@ -4,7 +4,7 @@ import "../style/notepadtitle.css";
 const NotepadTitle = ({ title, setTitleFunction, deleteFn }) => {
   return (
     <>
-      <p>Notepad title</p>
+      <p className="npTitle">Notepad title</p>
 
       <div className="npTitleComp">
         <input

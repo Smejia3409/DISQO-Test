@@ -1,12 +1,29 @@
 .npTitleComp {
-  width: 100%;
   display: flex;
+  width: 100%;
+  padding-top: 10px;
 }
 
 .npBtn {
-  text-align: right;
   width: 100%;
+  text-align: right;
 }
 .npBtn button {
   margin-right: 2%;
+}
+
+@media screen and (max-width: 320px) {
+  .npTitleComp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .npBtn {
+    text-align: center;
+    width: 100%;
+  }
+  .notepadTitle {
+    width: 100%;
+  }
 }

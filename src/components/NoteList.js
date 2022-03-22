@@ -3,8 +3,6 @@ const NoteList = ({ arr, deleteFn, editNote }) => {
   return (
     <>
       {arr.map((note) => {
-        console.log(note.id);
-        console.log(arr.length);
         const index = arr.length - 1;
 
         return (
