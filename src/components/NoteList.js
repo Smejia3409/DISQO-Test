@@ -1,4 +1,6 @@
 import "../style/notelist.css";
+
+//maps all notes in list
 const NoteList = ({ arr, deleteFn, editNote }) => {
   return (
     <>
